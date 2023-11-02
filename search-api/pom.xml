@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
     <groupId>org.sunbird</groupId>
-    <artifactId>knowlg-search</artifactId>
+    <artifactId>search-api</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>Knowlg Search</name>
+    <name>Search Api</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -21,7 +21,7 @@
 	</properties>
 	<profiles>
 		<profile>
-			<id>knowlg-platform</id>
+			<id>knowlg-search</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>

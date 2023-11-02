@@ -43,8 +43,8 @@ jobs:
           cd search-api/
           sh knowlg-docker-image.sh ${{ github.ref_name }}
           docker images
-          docker tag search-service:${{ github.ref_name }} ${{ vars.DOCKERHUB_USERNAME }}/search-service:${{ github.ref_name }}
-          docker push ${{ vars.DOCKERHUB_USERNAME }}/search-service:${{ github.ref_name }}
+          docker tag knowlg-search:${{ github.ref_name }} ${{ vars.DOCKERHUB_USERNAME }}/knowlg-search:${{ github.ref_name }}
+          docker push ${{ vars.DOCKERHUB_USERNAME }}/knowlg-search:${{ github.ref_name }}
 
       - name: Store Maven dependencies cache
         uses: actions/cache@v2

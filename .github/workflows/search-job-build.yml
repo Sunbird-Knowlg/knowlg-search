@@ -27,9 +27,9 @@ jobs:
         run: |
           cd search-job/
           mvn clean install -DskipTests
-          docker build -t ${{ vars.DOCKERHUB_USERNAME }}/search-indexer:${{ github.ref_name }} .
+          docker build -t ${{ vars.DOCKERHUB_USERNAME }}/knowlg-search-job:${{ github.ref_name }} .
           docker images
-          docker push ${{ vars.DOCKERHUB_USERNAME }}/search-indexer:${{ github.ref_name }}
+          docker push ${{ vars.DOCKERHUB_USERNAME }}/knowlg-search-job:${{ github.ref_name }}
 
   unit-tests:
     runs-on: ubuntu-latest
